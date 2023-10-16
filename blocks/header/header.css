@@ -148,17 +148,18 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 208px;
   height: auto;
 }
 
 /* sections */
 header nav .nav-sections {
-  grid-area: sections;
-  flex: 1 1 auto;
-  display: none;
+
+ 
   visibility: hidden;
   background-color: var(--overlay-color);
+  float: right;
+  margin-right: 20px;
 }
 
 header nav[aria-expanded="true"] .nav-sections {
@@ -169,9 +170,10 @@ header nav[aria-expanded="true"] .nav-sections {
 
 header nav .nav-sections ul  {
   list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
+
+  font-size: var(--body-font-size-m);
   font-weight: 500;
+
 }
 
 header nav .nav-sections ul > li {
@@ -227,7 +229,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 2em;
     margin: 0;
-    font-size: var(--body-font-size-xs);
+    font-size: var(--body-font-size-s);
   }
 
   header nav .nav-sections > ul > li {
@@ -272,4 +274,5 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  display: none;
 }
